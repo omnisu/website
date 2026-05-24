@@ -1,0 +1,44 @@
+{
+	// Editor
+	"editor.linkedEditing": true,
+
+	// Biome
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "always",
+		"source.organizeImports.biome": "always"
+	},
+
+	// Css (raw)
+	"css.validate": false,
+	"scss.validate": false,
+
+	// Tailwind
+	"tailwindCSS.experimental.classRegex": [
+		["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*?)[\"'`]"],
+		["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*?)[\"'`]"],
+		["clsx\\(([^)]*)\\)", "[\"'`]([^\"'`]*?)[\"'`]"]
+	],
+	"tailwindCSS.classAttributes": ["class", "className", ".*Variants", "cn"],
+
+	// Files
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true
+	},
+
+	// Imports
+	"js/ts.preferences.autoImportFileExcludePatterns": ["kysely", "@base-ui/react"],
+
+	// Typescript & Javascript
+	"js/ts.tsdk.path": "node_modules/typescript/lib",
+	"js/ts.tsdk.promptToUseWorkspaceVersion": true,
+	"js/ts.preferences.quoteStyle": "double"
+}
