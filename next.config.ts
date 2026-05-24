@@ -1,8 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  output: "export"
+  output: "export",
+
+  experimental: {
+    viewTransition: true,
+    optimizePackageImports: ["@base-ui/react", "lucide-react"]
+  },
+
+  images: {
+    unoptimized: true,
+  }
 };
 
 export default nextConfig;
