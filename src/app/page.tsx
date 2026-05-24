@@ -1,13 +1,17 @@
-import { AuroraBackground } from "@/lib/ui/aurora-background";
+import { AuroraAtTop } from "@/widgets/aurora-at-top";
 import { Header } from "@/widgets/header";
 
 export default function Home() {
 	return (
 		<div>
 			<section className="h-svh relative">
-				<AuroraBackground className="absolute inset-0 -z-1" />
+				<AuroraAtTop />
 
 				<Header />
+			</section>
+
+			<section>
+				<span>Hellp</span>
 			</section>
 
 			<section className="text-lg">
