@@ -10,72 +10,7 @@ export default function Home() {
 				<Header />
 			</section>
 
-			<section>
-				<span>Hellp</span>
-			</section>
-
-			<section className="text-lg">
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-				<h2>Scroll</h2>
-			</section>
+			<section className="h-svh" />
 		</div>
 	);
 }
