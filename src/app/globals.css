@@ -1,23 +1,13 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-	--background: #f8fafc;
-	--foreground: #0f172a;
+@custom-variant dark (&:is(.dark *));
 
-	--primary: #0284c7;
-	--accent: #10b981;
-	--muted: #64748b;
-	--grid-color: #e2e8f0;
-}
-
-.dark {
-	--background: #121318;
-	--foreground: #f8fafc;
-
-	--primary: #38bdf8;
-	--accent: #34d399;
-	--muted: #64748b;
-	--grid-color: #191b22;
+@theme {
+	--spacing-safe-top: env(safe-area-inset-top);
+	--spacing-safe-bottom: env(safe-area-inset-bottom);
+	--spacing-safe-left: env(safe-area-inset-left);
+	--spacing-safe-right: env(safe-area-inset-right);
 }
 
 @theme inline {
@@ -31,6 +21,50 @@
 
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
+}
+
+:root {
+	--background: #f8fafc;
+	--foreground: #0f172a;
+
+	--primary: #1d4ed8;
+	--primary-hover: #1e40af;
+	--primary-foreground: #ffffff;
+
+	--secondary: #e2e8f0;
+	--secondary-foreground: #0f172a;
+
+	--destructive: #dc2626;
+
+	--border: #e2e8f0;
+	--input: #cbd5e1;
+	--ring: #3b82f6;
+
+	--accent: #10b981;
+	--muted: #64748b;
+	--grid-color: #e2e8f0;
+}
+
+.dark {
+	--background: #090d16;
+	--foreground: #f8fafc;
+
+	--primary: #3b82f6;
+	--primary-hover: #60a5fa;
+	--primary-foreground: #ffffff;
+
+	--secondary: #1e293b;
+	--secondary-foreground: #f8fafc;
+
+	--destructive: #f87171;
+
+	--border: #1e293b;
+	--input: #334155;
+	--ring: #3b82f6;
+
+	--accent: #34d399;
+	--muted: #64748b;
+	--grid-color: #161b26;
 }
 
 body {

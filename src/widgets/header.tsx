@@ -1,5 +1,6 @@
 "use client";
 
+import { SnowflakeIcon } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { cn } from "@/lib/styles";
 
@@ -50,8 +51,8 @@ export function Header() {
 					"group-data-inset:rounded-none group-data-inset:max-w-full",
 				)}
 			>
-				<div className="mx-auto max-w-screen-2xl p-4">
-					<span>Hello?</span>
+				<div className="mx-auto max-w-screen-2xl px-4 h-16 flex items-center justify-between">
+					<SnowflakeIcon className="text-blue-900 dark:text-blue-500 size-10" />
 				</div>
 			</div>
 		</header>

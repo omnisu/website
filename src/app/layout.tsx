@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "Egor Morozov",
 	// description: "",
+	icons: [{ url: "/favicon.svg", type: "image/svg+xml" }],
 };
 
 export default function RootLayout({
