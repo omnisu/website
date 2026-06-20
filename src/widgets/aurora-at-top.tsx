@@ -2,8 +2,13 @@
 
 import { useEffect, useRef } from "react";
 import { AuroraBackground } from "@/lib/ui/aurora-background";
+import { utils } from "@/lib/utils";
 
-export function AuroraAtTop() {
+interface Props {
+	className?: string;
+}
+
+export function AuroraAtTop(props: Props) {
 	const sentinelRef = useRef<HTMLDivElement>(null);
 	const auroraWrapperRef = useRef<HTMLDivElement>(null);
 
@@ -29,7 +34,7 @@ export function AuroraAtTop() {
 	}, []);
 
 	return (
-		<div className="relative h-svh w-full">
+		<div className={utils.cn("relative h-svh w-full", props.className)}>
 			<div ref={sentinelRef} className="absolute top-0 h-px w-full" />
 
 			<div

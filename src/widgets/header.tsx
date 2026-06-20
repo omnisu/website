@@ -49,7 +49,7 @@ export function Header() {
 				)}
 			>
 				<div className="mx-auto max-w-screen-2xl p-4">
-					<span>egormorozov.dev</span>
+					<span>Hello?</span>
 				</div>
 			</GlassCard>
 		</header>
