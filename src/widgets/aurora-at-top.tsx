@@ -1,5 +1,6 @@
 "use client";
 
+import { useTheme } from "next-themes";
 import { useEffect, useRef } from "react";
 import { cn } from "@/lib/styles";
 import { AuroraBackground } from "./aurora-background";
@@ -33,6 +34,8 @@ export function AuroraAtTop(props: Props) {
 		return () => observer.disconnect();
 	}, []);
 
+	const { resolvedTheme } = useTheme();
+
 	return (
 		<div className={cn("relative h-svh w-full", props.className)}>
 			<div ref={sentinelRef} className="absolute top-0 h-px w-full" />
@@ -41,7 +44,13 @@ export function AuroraAtTop(props: Props) {
 				ref={auroraWrapperRef}
 				className="absolute inset-0 data-[at-top=true]:fixed data-[at-top=true]:top-0"
 			>
-				<AuroraBackground />
+				<AuroraBackground
+					colorStops={
+						resolvedTheme === "dark"
+							? ["#030712", "#06b6d4", "#4f46e5"]
+							: ["#00f2fe", "#0040ff", "#ffffff"]
+					}
+				/>
 			</div>
 		</div>
 	);

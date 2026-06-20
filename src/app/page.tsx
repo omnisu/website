@@ -1,8 +1,13 @@
+"use client";
+
+import { useTheme } from "next-themes";
 import { Section } from "@/ui/section";
 import { AuroraAtTop } from "@/widgets/aurora-at-top";
 import { Header } from "@/widgets/header";
 
 export default function Home() {
+	const { setTheme } = useTheme();
+
 	return (
 		<div>
 			<section className="h-svh relative pt-24">
@@ -11,6 +16,13 @@ export default function Home() {
 
 				<div className="max-w-screen-2xl 2xl:mx-auto px-4">
 					<h1>Egor Morozov</h1>
+
+					<button type="button" onClick={() => setTheme("light")}>
+						Light
+					</button>
+					<button type="button" onClick={() => setTheme("dark")}>
+						Dark
+					</button>
 				</div>
 			</section>
 
