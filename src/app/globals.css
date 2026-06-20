@@ -10,16 +10,14 @@
 	--grid-color: #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #121318;
-		--foreground: #f8fafc;
+.dark {
+	--background: #121318;
+	--foreground: #f8fafc;
 
-		--primary: #38bdf8;
-		--accent: #34d399;
-		--muted: #64748b;
-		--grid-color: #262934;
-	}
+	--primary: #38bdf8;
+	--accent: #34d399;
+	--muted: #64748b;
+	--grid-color: #262934;
 }
 
 @theme inline {
