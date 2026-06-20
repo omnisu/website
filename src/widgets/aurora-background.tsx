@@ -2,7 +2,7 @@
 
 import { Color, Mesh, Program, Renderer, Triangle } from "ogl";
 import { useEffect, useRef } from "react";
-import { utils } from "../utils";
+import { cn } from "@/lib/styles";
 
 // ============================================================================
 // SHADER SOURCES
@@ -386,5 +386,5 @@ export function AuroraBackground({ className, ...props }: Props) {
 
 	// Render container div with merged className
 	// utils.cn is a utility function that merges class names (similar to clsx or classnames)
-	return <div ref={ctnDom} className={utils.cn("w-full h-full", className)} />;
+	return <div ref={ctnDom} className={cn("w-full h-full", className)} />;
 }

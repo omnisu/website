@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { GlassCard } from "@/lib/ui/glass-card";
-import { utils } from "@/lib/utils";
+import { cn } from "@/lib/styles";
 
 /**
  * Header Component
@@ -42,8 +41,11 @@ export function Header() {
 			ref={headerRef}
 			className="group fixed top-0 left-0 right-0 z-50 p-4 transition-[padding] ease-in-out data-inset:p-0"
 		>
-			<GlassCard
-				className={utils.cn(
+			<div
+				className={cn(
+					"bg-[rgba(255,255,255,0.03)] backdrop-filter-[blur(20px)_saturate(1.4)]",
+					"border border-[rgba(255,255,255,0.08)] shadow-[0_4px_24px_#00000026]",
+
 					"rounded-lg transition-all ease-in-out max-w-screen-2xl mx-auto",
 					"group-data-inset:rounded-none group-data-inset:max-w-full",
 				)}
@@ -51,7 +53,7 @@ export function Header() {
 				<div className="mx-auto max-w-screen-2xl p-4">
 					<span>Hello?</span>
 				</div>
-			</GlassCard>
+			</div>
 		</header>
 	);
 }

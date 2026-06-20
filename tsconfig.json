@@ -13,12 +13,12 @@
 		"isolatedModules": true,
 		"jsx": "react-jsx",
 		"incremental": true,
-		"plugins": [
-			{
-				"name": "next"
-			}
-		],
+		"plugins": [{ "name": "next" }],
 		"paths": {
+			"@/lib/*": ["./src/shared/lib/*"],
+			"@/ui/*": ["./src/shared/ui/*"],
+			"@/hooks/*": ["./src/shared/hooks/*"],
+
 			"@/*": ["./src/*"]
 		}
 	},

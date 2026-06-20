@@ -1,4 +1,4 @@
-import { Section } from "@/lib/ui/section";
+import { Section } from "@/ui/section";
 import { AuroraAtTop } from "@/widgets/aurora-at-top";
 import { Header } from "@/widgets/header";
 
