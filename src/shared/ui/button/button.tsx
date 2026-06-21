@@ -81,12 +81,14 @@ export function Button({
 	size = "default",
 	onClick,
 	children,
+	...props
 }: ButtonProps) {
 	return (
 		<ButtonPrimitive
 			data-slot="button"
 			onClick={onClick}
 			className={cn(buttonVariants({ variant, size, className }))}
+			{...props}
 		>
 			{children}
 		</ButtonPrimitive>

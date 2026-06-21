@@ -7,6 +7,7 @@ import { Card } from "@/ui/card";
 import { Checkbox } from "@/ui/checkbox/checkbox";
 import { Section } from "@/ui/section";
 import { toastManager } from "@/ui/toast";
+import { Tooltip } from "@/ui/tooltip";
 import { AuroraAtTop } from "@/widgets/aurora-at-top";
 import { Header } from "@/widgets/header";
 
@@ -58,7 +59,12 @@ export default function Home() {
 							>
 								Default (with toast)
 							</Button>
-							<Button variant="secondary">Secondary</Button>
+							<Tooltip>
+								<Tooltip.Trigger
+									render={<Button variant="secondary">Secondary (with tooltip)</Button>}
+								/>
+								<Tooltip.Content>Additional contents</Tooltip.Content>
+							</Tooltip>
 							<Button variant="outline">Outline</Button>
 							<Button variant="ghost">Ghost</Button>
 							<Button variant="destructive">Destructive</Button>
