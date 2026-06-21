@@ -45,7 +45,7 @@ export function Header() {
 			<div
 				className={cn(
 					"bg-[rgba(255,255,255,0.03)] backdrop-filter-[blur(20px)_saturate(1.4)]",
-					"border border-[rgba(255,255,255,0.08)] shadow-[0_4px_24px_#00000026]",
+					"border-2 border-[rgba(255,255,255,0.08)] shadow-[0_4px_24px_#00000026]",
 
 					"rounded-lg transition-all ease-in-out max-w-screen-2xl mx-auto",
 					"group-data-inset:rounded-none group-data-inset:max-w-full",

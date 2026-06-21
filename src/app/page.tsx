@@ -1,6 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { Card } from "@/ui/card";
 import { Section } from "@/ui/section";
 import { AuroraAtTop } from "@/widgets/aurora-at-top";
 import { Header } from "@/widgets/header";
@@ -21,6 +22,20 @@ export default function Home() {
 					<button type="button" onClick={() => setTheme("dark")}>
 						Dark
 					</button>
+				</div>
+
+				<div className="p-4 max-w-lg">
+					<Card>
+						<Card.Header>
+							<Card.Title>Card Title</Card.Title>
+							<Card.Description>Card Description</Card.Description>
+							<Card.Action>Action</Card.Action>
+						</Card.Header>
+
+						<Card.Content>Card Contents</Card.Content>
+
+						<Card.Footer>Card Footer</Card.Footer>
+					</Card>
 				</div>
 			</section>
 
