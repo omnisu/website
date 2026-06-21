@@ -18,6 +18,7 @@
 			"@/lib/*": ["./src/shared/lib/*"],
 			"@/ui/*": ["./src/shared/ui/*"],
 			"@/hooks/*": ["./src/shared/hooks/*"],
+			"@/icons/*": ["./src/shared/icons/*"],
 
 			"@/*": ["./src/*"]
 		}
