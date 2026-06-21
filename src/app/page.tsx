@@ -1,6 +1,8 @@
 "use client";
 
+import { DogIcon } from "lucide-react";
 import { useTheme } from "next-themes";
+import { Button } from "@/ui/button/button";
 import { Card } from "@/ui/card";
 import { Section } from "@/ui/section";
 import { AuroraAtTop } from "@/widgets/aurora-at-top";
@@ -27,7 +29,7 @@ export default function Home() {
 				<div className="p-4 max-w-lg">
 					<Card>
 						<Card.Header>
-							<Card.Title>Card Title</Card.Title>
+							<Card.Title>Example Card</Card.Title>
 							<Card.Description>Card Description</Card.Description>
 							<Card.Action>Action</Card.Action>
 						</Card.Header>
@@ -36,6 +38,36 @@ export default function Home() {
 
 						<Card.Footer>Card Footer</Card.Footer>
 					</Card>
+				</div>
+
+				<div className="p-4">
+					<span>Buttons</span>
+
+					<div className="flex flex-wrap gap-x-3 gap-y-2 max-w-lg mt-4">
+						<Button variant="default">Default</Button>
+						<Button variant="secondary">Secondary</Button>
+						<Button variant="outline">Outline</Button>
+						<Button variant="ghost">Ghost</Button>
+						<Button variant="destructive">Destructive</Button>
+						<Button variant="link">Link</Button>
+
+						<Button size="lg">Large</Button>
+						<Button size="default">Default</Button>
+						<Button size="sm">Small</Button>
+						<Button size="xs">Extra-small</Button>
+						<Button size="icon-lg">
+							<DogIcon />
+						</Button>
+						<Button size="icon">
+							<DogIcon />
+						</Button>
+						<Button size="icon-sm">
+							<DogIcon />
+						</Button>
+						<Button size="icon-xs">
+							<DogIcon />
+						</Button>
+					</div>
 				</div>
 			</section>
 
