@@ -72,17 +72,20 @@ export const buttonVariants = cva(
 interface ButtonProps extends VariantProps<typeof buttonVariants> {
 	className?: string;
 	children: ReactNode;
+	onClick?: () => void;
 }
 
 export function Button({
 	className,
 	variant = "default",
 	size = "default",
+	onClick,
 	children,
 }: ButtonProps) {
 	return (
 		<ButtonPrimitive
 			data-slot="button"
+			onClick={onClick}
 			className={cn(buttonVariants({ variant, size, className }))}
 		>
 			{children}

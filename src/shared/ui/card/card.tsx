@@ -41,6 +41,9 @@ export function Card({ size = "default", children, className }: CardProps) {
 				// Images-related
 				"*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl has-[>img:first-child]:pt-0",
 
+				// Optimizations
+				"transform-gpu",
+
 				"gap-(--card-spacing) py-(--card-spacing) [--card-spacing:--spacing(4)] data-[size=sm]:[--card-spacing:--spacing(3)]",
 				className,
 			)}

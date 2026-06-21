@@ -6,6 +6,7 @@ import { Button } from "@/ui/button/button";
 import { Card } from "@/ui/card";
 import { Checkbox } from "@/ui/checkbox/checkbox";
 import { Section } from "@/ui/section";
+import { toastManager } from "@/ui/toast";
 import { AuroraAtTop } from "@/widgets/aurora-at-top";
 import { Header } from "@/widgets/header";
 
@@ -46,7 +47,17 @@ export default function Home() {
 						<span>Buttons</span>
 
 						<div className="flex flex-wrap gap-x-3 gap-y-2 max-w-lg mt-4">
-							<Button variant="default">Default</Button>
+							<Button
+								variant="default"
+								onClick={() =>
+									toastManager.add({
+										title: "Example toast",
+										description: "Some useful description",
+									})
+								}
+							>
+								Default (with toast)
+							</Button>
 							<Button variant="secondary">Secondary</Button>
 							<Button variant="outline">Outline</Button>
 							<Button variant="ghost">Ghost</Button>
